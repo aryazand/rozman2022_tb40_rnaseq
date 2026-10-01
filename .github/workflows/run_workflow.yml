@@ -58,6 +58,16 @@ jobs:
       (needs.changes.outputs.snakemake == 'true' || needs.changes.outputs.workflow == 'true')
 
     steps:
+      - name: Install GitHub CLI
+        run: |
+          sudo apt update
+          sudo apt install -y gh
+
+      - name: Setup Rclone
+        uses: AnimMouse/setup-rclone@v1
+        with:
+          rclone_config: ${{ secrets.RCLONE_CONFIG }}
+          
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -82,16 +92,6 @@ jobs:
             --keep-going
           stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-fs"
           show-disk-usage-on-error: true
-
-      - name: Install GitHub CLI
-        run: |
-          sudo apt update
-          sudo apt install -y gh
-
-      - name: Setup Rclone
-        uses: AnimMouse/setup-rclone@v1
-        with:
-          rclone_config: ${{ secrets.RCLONE_CONFIG }}
           
       - name: Transfer Results to Container 
         run: | 
