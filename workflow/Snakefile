@@ -1,0 +1,63 @@
+from snakemake.utils import min_version
+
+min_version("6.10.0")
+
+
+configfile: "config/config.yml"
+
+
+# declare https://github.com/ZandvakiliLab/fastq-prep-and-align as a module
+module fastq_prep_and_align:
+    snakefile:
+        github(
+            "ZandvakiliLab/fastq-prep-and-align",
+            path="workflow/Snakefile",
+            branch="main",
+        )
+    config:
+        config
+
+
+# use all rules from https://github.com/ZandvakiliLab/fastq-prep-and-align
+use rule * from fastq_prep_and_align
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 3. Module rule Modification
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+rule download_index:
+    output:
+        idx=directory("results/star/index/"),
+    log:
+        "results/star/index/download_index.log",
+    conda:
+        "envs/rclone.yml"
+    params:
+        idx="jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/star/index",
+    shell:
+        "rclone copy {params.idx} {output.idx}"
+
+
+use rule align_star_align from fastq_prep_and_align as align_star_align with:
+    input:
+        fq1=lambda wildcards: fastq_prep_and_align.align.get_processed_fastq(wildcards.sample, regex="read1"),
+        fq2=lambda wildcards: (
+            fastq_prep_and_align.align.get_processed_fastq(wildcards.sample, regex="read2")
+            if fastq_prep_and_align.align.is_paired_end()
+            else []
+        ),
+        idx=rules.download_index.output.idx,
+
+
+use rule prereads_multiqc from fastq_prep_and_align as prereads_multiqc with:
+    input:
+        lambda wc: fastq_prep_and_align.prepreads.get_multiqc_input(wc)
+        + fastq_prep_and_align.align.get_multiqc_input(wc),
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# container definition (optional)
+# ─────────────────────────────────────────────────────────────────────────────
+container: "oras://ghcr.io/zandvakililab/fastq-prep-and-align:latest"
