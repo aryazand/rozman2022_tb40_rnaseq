@@ -42,9 +42,13 @@ rule download_index:
 
 use rule align_star_align from fastq_prep_and_align as align_star_align with:
     input:
-        fq1=lambda wildcards: fastq_prep_and_align.align.get_processed_fastq(wildcards.sample, regex="read1"),
+        fq1=lambda wildcards: fastq_prep_and_align.align.get_processed_fastq(
+            wildcards.sample, regex="read1"
+        ),
         fq2=lambda wildcards: (
-            fastq_prep_and_align.align.get_processed_fastq(wildcards.sample, regex="read2")
+            fastq_prep_and_align.align.get_processed_fastq(
+                wildcards.sample, regex="read2"
+            )
             if fastq_prep_and_align.align.is_paired_end()
             else []
         ),
