@@ -60,4 +60,4 @@ use rule prereads_multiqc from fastq_prep_and_align as prereads_multiqc with:
 # ─────────────────────────────────────────────────────────────────────────────
 # container definition (optional)
 # ─────────────────────────────────────────────────────────────────────────────
-container: "oras://ghcr.io/zandvakililab/fastq-prep-and-align:latest"
+# container: "oras://ghcr.io/zandvakililab/fastq-prep-and-align:latest"
