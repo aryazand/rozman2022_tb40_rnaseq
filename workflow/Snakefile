@@ -26,35 +26,6 @@ use rule * from fastq_prep_and_align
 # 3. Module rule Modification
 # ─────────────────────────────────────────────────────────────────────────────
 
-
-rule download_index:
-    output:
-        idx=directory("results/star/index/"),
-    log:
-        "results/star/index/download_index.log",
-    conda:
-        "envs/rclone.yml"
-    params:
-        idx="jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/star/index",
-    shell:
-        "rclone copy {params.idx} {output.idx}"
-
-
-use rule align_star_align from fastq_prep_and_align as align_star_align with:
-    input:
-        fq1=lambda wildcards: fastq_prep_and_align.align.get_processed_fastq(
-            wildcards.sample, regex="read1"
-        ),
-        fq2=lambda wildcards: (
-            fastq_prep_and_align.align.get_processed_fastq(
-                wildcards.sample, regex="read2"
-            )
-            if fastq_prep_and_align.align.is_paired_end()
-            else []
-        ),
-        idx=rules.download_index.output.idx,
-
-
 use rule prereads_multiqc from fastq_prep_and_align as prereads_multiqc with:
     input:
         lambda wc: fastq_prep_and_align.prepreads.get_multiqc_input(wc)
