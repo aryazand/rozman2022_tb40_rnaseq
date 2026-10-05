@@ -1,0 +1,1646 @@
+{
+  "assemblies": [
+    {
+      "name": "cmv",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "cmv-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "TwoBitAdapter",
+          "twoBitLocation": {
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/genome/cmv.2bit",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "displayName": "CMV_TB40"
+    },
+    {
+      "name": "human",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "human-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "TwoBitAdapter",
+          "twoBitLocation": {
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/genome/human.2bit",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "displayName": "Human"
+    }
+  ],
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "cmv.sorted.gff",
+      "name": "CMV_TB40_Annotation",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/genome/cmv.sorted.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/genome/cmv.sorted.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep1.cmv.plus",
+      "name": "12hpi_rep1.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep1.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep2.cmv.plus",
+      "name": "12hpi_rep2.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep2.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep1.cmv.plus",
+      "name": "24hpi_rep1.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep1.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep2.cmv.plus",
+      "name": "24hpi_rep2.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep2.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep1.cmv.plus",
+      "name": "48hpi_rep1.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep1.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep2.cmv.plus",
+      "name": "48hpi_rep2.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep2.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep1.cmv.plus",
+      "name": "4hpi_rep1.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep1.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep2.cmv.plus",
+      "name": "4hpi_rep2.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep2.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep1.cmv.plus",
+      "name": "72hpi_PFA_rep1.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep1.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep2.cmv.plus",
+      "name": "72hpi_PFA_rep2.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep2.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep1.cmv.plus",
+      "name": "72hpi_rep1.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep1.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep2.cmv.plus",
+      "name": "72hpi_rep2.cmv.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep2.cmv.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep1.cmv.minus",
+      "name": "12hpi_rep1.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep1.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep2.cmv.minus",
+      "name": "12hpi_rep2.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep2.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep1.cmv.minus",
+      "name": "24hpi_rep1.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep1.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep2.cmv.minus",
+      "name": "24hpi_rep2.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep2.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep1.cmv.minus",
+      "name": "48hpi_rep1.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep1.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep2.cmv.minus",
+      "name": "48hpi_rep2.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep2.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep1.cmv.minus",
+      "name": "4hpi_rep1.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep1.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep2.cmv.minus",
+      "name": "4hpi_rep2.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep2.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep1.cmv.minus",
+      "name": "72hpi_PFA_rep1.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep1.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep2.cmv.minus",
+      "name": "72hpi_PFA_rep2.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep2.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep1.cmv.minus",
+      "name": "72hpi_rep1.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep1.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep2.cmv.minus",
+      "name": "72hpi_rep2.cmv.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep2.cmv.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "12hpi_rep1_cmv",
+      "name": "12hpi_rep1_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep1_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep1_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "12hpi_rep2_cmv",
+      "name": "12hpi_rep2_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep2_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep2_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_rep1_cmv",
+      "name": "24hpi_rep1_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep1_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep1_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_rep2_cmv",
+      "name": "24hpi_rep2_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep2_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep2_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "48hpi_rep1_cmv",
+      "name": "48hpi_rep1_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep1_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep1_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "48hpi_rep2_cmv",
+      "name": "48hpi_rep2_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep2_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep2_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "4hpi_rep1_cmv",
+      "name": "4hpi_rep1_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep1_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep1_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "4hpi_rep2_cmv",
+      "name": "4hpi_rep2_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep2_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep2_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_PFA_rep1_cmv",
+      "name": "72hpi_PFA_rep1_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep1_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep1_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_PFA_rep2_cmv",
+      "name": "72hpi_PFA_rep2_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep2_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep2_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_rep1_cmv",
+      "name": "72hpi_rep1_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep1_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep1_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_rep2_cmv",
+      "name": "72hpi_rep2_cmv.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep2_cmv.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep2_cmv.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "human.sorted.gff",
+      "name": "Human_Annotation",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/genome/human.sorted.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/genome/human.sorted.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep1.human.plus",
+      "name": "12hpi_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep2.human.plus",
+      "name": "12hpi_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep1.human.plus",
+      "name": "24hpi_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep2.human.plus",
+      "name": "24hpi_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep1.human.plus",
+      "name": "48hpi_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep2.human.plus",
+      "name": "48hpi_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep1.human.plus",
+      "name": "4hpi_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep2.human.plus",
+      "name": "4hpi_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep1.human.plus",
+      "name": "72hpi_PFA_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep2.human.plus",
+      "name": "72hpi_PFA_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep1.human.plus",
+      "name": "72hpi_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep2.human.plus",
+      "name": "72hpi_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep1.human.minus",
+      "name": "12hpi_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_rep2.human.minus",
+      "name": "12hpi_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/12hpi_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep1.human.minus",
+      "name": "24hpi_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_rep2.human.minus",
+      "name": "24hpi_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/24hpi_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep1.human.minus",
+      "name": "48hpi_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_rep2.human.minus",
+      "name": "48hpi_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/48hpi_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep1.human.minus",
+      "name": "4hpi_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "4hpi_rep2.human.minus",
+      "name": "4hpi_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/4hpi_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep1.human.minus",
+      "name": "72hpi_PFA_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_PFA_rep2.human.minus",
+      "name": "72hpi_PFA_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_PFA_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep1.human.minus",
+      "name": "72hpi_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_rep2.human.minus",
+      "name": "72hpi_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/deeptools/coverage/72hpi_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "12hpi_rep1_human",
+      "name": "12hpi_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "12hpi_rep2_human",
+      "name": "12hpi_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/12hpi_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_rep1_human",
+      "name": "24hpi_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_rep2_human",
+      "name": "24hpi_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/24hpi_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "48hpi_rep1_human",
+      "name": "48hpi_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "48hpi_rep2_human",
+      "name": "48hpi_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/48hpi_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "4hpi_rep1_human",
+      "name": "4hpi_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "4hpi_rep2_human",
+      "name": "4hpi_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/4hpi_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_PFA_rep1_human",
+      "name": "72hpi_PFA_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_PFA_rep2_human",
+      "name": "72hpi_PFA_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_PFA_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_rep1_human",
+      "name": "72hpi_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_rep2_human",
+      "name": "72hpi_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/rozman2022_tb40_rnaseq/results/processed_alignment/cram/72hpi_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "showLegend": true,
+          "colorBySetting": {
+            "type": "stranded"
+          }
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "aggregateTextSearchAdapters": [],
+  "configuration": {},
+  "defaultSession": {
+    "name": "New Session"
+  }
+}
