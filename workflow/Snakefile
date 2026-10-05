@@ -26,6 +26,12 @@ use rule * from fastq_prep_and_align
 # 3. Module rule Modification
 # ─────────────────────────────────────────────────────────────────────────────
 
+use rule align_star_index from fastq_prep_and_align as align_star_index with:
+    input:
+        fasta="results/genome/genome.fasta",
+        gtf="results/genome/genome.gff",
+    threads: 8
+
 use rule prereads_multiqc from fastq_prep_and_align as prereads_multiqc with:
     input:
         lambda wc: fastq_prep_and_align.prepreads.get_multiqc_input(wc)
