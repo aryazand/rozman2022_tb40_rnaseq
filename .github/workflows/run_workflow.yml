@@ -22,7 +22,7 @@ jobs:
               - 'webpage/**'
             workflow:
               - '.github/workflows/run_workflow.yml'
-              - 'profiles/ci-profile.yaml'
+              - 'profiles/ci/profile.yaml'
             snakemake:
               - 'workflow/**'
               - 'config/**'
@@ -40,7 +40,7 @@ jobs:
         with:
           directory: "."
           snakefile: "workflow/Snakefile"
-          args: "--lint --workflow-profile profiles/default/ci-profile.yaml"
+          args: "--lint"
 
   snakemake:
     # Must match the labels you set in the GARM pool
@@ -79,7 +79,7 @@ jobs:
           snakefile: "workflow/Snakefile"
           install-apptainer: "true"
           args: >-
-            --workflow-profile profiles/default/ci-profile.yaml
+            --workflow-profile profiles/ci/profile.yaml
             --cores all
             --software-deployment-method apptainer conda
             --default-storage-provider fs
