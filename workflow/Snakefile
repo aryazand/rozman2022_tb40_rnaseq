@@ -32,13 +32,16 @@ use rule align_star_index from fastq_prep_and_align as align_star_index with:
         gtf="results/genome/genome.gff",
     threads: 8
 
-use rule align_deeptools_coverage from fastq_prep_and_align as module_align_deeptools_coverage with:
+use rule align_deeptools_coverage from fastq_prep_and_align as align_deeptools_coverage with:
     params:
         effective_genome_size=lambda wc: config["mapping_stats"]["deeptools_coverage"][
             "genome_size"
         ][wc.genome],
         extra=lambda wc: (
             config["mapping_stats"]["deeptools_coverage"]["extra"]
+            + " --normalizeUsing {norm}".format(
+                norm=config["mapping_stats"]["deeptools_coverage"]["normalizeUsing"]
+            )
             + " --filterRNAstrand {strand}".format(
                 strand="forward" if wc.strand == "minus" else "reverse"
             )
